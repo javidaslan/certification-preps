@@ -1,0 +1,10 @@
+# create pod
+kubectl run nginx --image nginx:latest
+
+# create pod dry-run client and generate manifest
+kubectl run nginx --image nginx:latest --dry-run=client -o yaml
+
+# scale replicaset
+kubectl scale -f <file_name> --replicas=<number> 
+or
+kubectl scale rs/<name> --replicas=<number> 
