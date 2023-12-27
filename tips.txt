@@ -1,0 +1,14 @@
+# how to create metrics server
+kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+
+# how to create daemonset quickly
+1. create deployment using:
+    "kubectl create deployment <name> --image=<image> --replicas=<num> --dry-run=client -oyaml > output.yaml" command;
+2. Edit output.yaml and change kind: Deployment to kind: DaemonSet.
+3. Remove "replicas" as DaemonSet don't have replicas.
+4. Save file
+5. Run kubectl create -f output.yaml
+
+
+# how to create static pods:
+Static pods 
