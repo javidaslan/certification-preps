@@ -333,7 +333,4 @@ kubectl get pod nginx -o=jsonpath='{.metadata.name}  {.status.podIP}'
 
 # get names of nodes in loop using range:
 kubectl get nodes -o=jsonpath='{range $.items[*]}{$.metadata.name}{"\n"}{end}'
-
-
-
-
+```
