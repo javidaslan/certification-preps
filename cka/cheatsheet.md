@@ -304,6 +304,8 @@ kubectl create ingress <name> --rule="<rule>" --dry-run=client -o yaml > ing-pay
 
 ## Troubleshooting
 
+For cluster troubleshooting sometimes it is helpful to know default ports and protocols in Kubernetes. Check the official [ports and protocols](https://kubernetes.io/docs/reference/networking/ports-and-protocols/) page for this.
+
 ### Kubelet troubleshooting
 
 ```
