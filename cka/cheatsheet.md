@@ -122,7 +122,7 @@ kubectl rollout status deployment/<deployment_name>
 # get the revision history of deployment
 kubectl rollout history deployment/<deployment_name>
 
-# rollback deployment/frontend to previous revision
+# rollback deployment/<deployment_name> to previous revision
 kubectl rollout undo deployment/<deployment_name>
 ```
 
